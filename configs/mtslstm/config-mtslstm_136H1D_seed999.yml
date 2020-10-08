@@ -1,0 +1,125 @@
+additional_feature_files: None
+allow_subsequent_nan_losses: 10
+batch_size: 256
+cache_validation_data: true
+camels_attributes:
+- elev_mean
+- slope_mean
+- area_gages2
+- frac_forest
+- lai_max
+- lai_diff
+- gvf_max
+- gvf_diff
+- soil_depth_pelletier
+- soil_depth_statsgo
+- soil_porosity
+- soil_conductivity
+- max_water_content
+- sand_frac
+- silt_frac
+- clay_frac
+- carbonate_rocks_frac
+- geol_permeability
+- p_mean
+- pet_mean
+- aridity
+- frac_snow
+- high_prec_freq
+- high_prec_dur
+- low_prec_freq
+- low_prec_dur
+checkpoint_path: None
+clip_gradient_norm: 1
+clip_targets_to_zero:
+- qobs_mm_per_hour
+data_dir: data/datadir/CAMELS_US
+dataset: hourly_camels_us
+device: cuda:0
+dynamic_inputs:
+- convective_fraction
+- longwave_radiation
+- potential_energy
+- potential_evaporation
+- pressure
+- shortwave_radiation
+- specific_humidity
+- temperature
+- total_precipitation
+- wind_u
+- wind_v
+embedding_hiddens:
+- 30
+- 20
+- 64
+epochs: 30
+experiment_name: mtslstm_136H1D_seed999
+forcings: nldas_hourly
+head: regression
+hidden_size:
+  1D: 64
+  6H: 64
+  3H: 64
+  1H: 64
+initial_forget_bias: 3
+learning_rate:
+  0: 0.0005
+  10: 0.0001
+  25: 5e-05
+log_interval: 5
+log_n_figures: 0
+log_tensorboard: true
+loss: NSE
+metrics:
+- NSE
+- KGE
+- Alpha-NSE
+- Beta-NSE
+model: mtslstm
+num_workers: 3
+number_of_basins: 516
+optimizer: Adam
+output_activation: linear
+output_dropout: 0.4
+shared_mtslstm: false
+predict_last_n:
+  1H: 18
+  3H: 80
+  6H: 120
+  1D: 1
+regularization:
+- tie_frequencies
+run_dir: runs
+save_train_data: false
+save_validation_results: false
+save_weights_every: 1
+seed: 999
+seq_length:
+  1H: 168
+  3H: 168
+  6H: 360
+  1D: 365
+static_inputs: []
+target_variables:
+- qobs_mm_per_hour
+test_basin_file: data/516_basins.txt
+test_end_date: 30/09/2018
+test_start_date: 01/10/2008
+train_basin_file: data/516_basins.txt
+train_data_file: None
+train_end_date: 30/09/2003
+train_start_date: 01/10/1990
+transfer_mtslstm_states:
+  h: linear
+  c: linear
+use_frequencies:
+- 1D
+- 6H
+- 3H
+- 1H
+validate_every: 4
+validate_n_random_basins: 516
+validation_basin_file: data/516_basins.txt
+validation_end_date: 30/09/2008
+validation_start_date: 01/10/2003
+zero_center_target: true
