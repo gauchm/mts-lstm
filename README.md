@@ -9,11 +9,12 @@ The code in this repository, together with the `neuralhydrology` Python package,
 If you want to play around and train models yourself, we recommend taking a look at the [neuralhydrology documentation](https://neuralhydrology.readthedocs.io/), which also contains some tutorials on how to get started.
 
 ## Contents of this repository
-- `results_analysis.ipynb` --- Jupyter notebook to reproduce tables and figures from the paper
-- `environment.yml` --- Conda environment used to train and evaluate the models
+- `results_analysis.ipynb` -- Jupyter notebook to reproduce tables and figures from the paper
+- `odelstm-analysis.ipynb` -- Jupyter notebook to reproduce our results on time-continuous prediction
+- `environment.yml` -- Conda environment used to train and evaluate the models
 - `configs/` -- configuration files to train the models from scratch
-- `results/` --- Folder to place ensembled model predictions used in `results-analysis.ipynb` (available on [Zenodo](https://doi.org/10.5281/zenodo.4071886), see below)
-- `data/datadir/` --- Folder to place datasets (see below on where to obtain the data)
+- `results/` -- Folder to place ensembled model predictions used in `results-analysis.ipynb` (available on [Zenodo](https://doi.org/10.5281/zenodo.4071886), see below)
+- `data/datadir/` -- Folder to place datasets (see below on where to obtain the data)
 
 ## Required setup
 1. First, create the conda environment: `conda env create -f environment.yml`
