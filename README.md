@@ -2,7 +2,8 @@
 
 Accompanying code for the paper **"Rainfall-Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network"**
 
-    Gauch, M., Kratzert, F., Klotz, D., Nearing, G., Lin, J., and Hochreiter, S.: Rainfall--Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network, 2020.
+    Gauch, M., Kratzert, F., Klotz, D., Nearing, G., Lin, J., and Hochreiter, S.:
+    Rainfall--Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network, 2020.
 
 The code in this repository, together with the `neuralhydrology` Python package, was used to produce all results and figures in our paper.
 If you want to play around and train models yourself, we recommend taking a look at the [neuralhydrology documentation](https://neuralhydrology.readthedocs.io/), which also contains some tutorials on how to get started.
