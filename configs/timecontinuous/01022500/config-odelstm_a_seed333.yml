@@ -74,10 +74,10 @@ seq_length:
 static_inputs: []
 target_variables:
 - qobs_mm_per_hour
-test_basin_file: 01022500.txt
+test_basin_file: data/01022500.txt
 test_end_date: 30/09/2018
 test_start_date: 01/10/2008
-train_basin_file: 01022500.txt
+train_basin_file: data/01022500.txt
 train_data_file: None
 train_end_date: 30/09/2003
 train_start_date: 01/10/1990
@@ -90,7 +90,7 @@ use_frequencies:
 - 1H
 validate_every: 3
 validate_n_random_basins: 516
-validation_basin_file: 01022500.txt
+validation_basin_file: data/01022500.txt
 validation_end_date: 30/09/2008
 validation_start_date: 01/10/2003
 zero_center_target: true
