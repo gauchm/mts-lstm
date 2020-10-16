@@ -1,6 +1,6 @@
-# Rainfall-Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network
+# Rainfall&ndash;Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network
 
-Accompanying code for the paper [**"Rainfall-Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network"**](https://arxiv.org/abs/2010.07921)
+Accompanying code for the paper [**"Rainfall&ndash;Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network"**](https://arxiv.org/abs/2010.07921)
 
     Gauch, M., Kratzert, F., Klotz, D., Nearing, G., Lin, J., and Hochreiter, S.:
     Rainfall--Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network, 2020.
