@@ -1,9 +1,9 @@
 # Rainfall&ndash;Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network
 
-Accompanying code for the paper [**"Rainfall&ndash;Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network"**](https://arxiv.org/abs/2010.07921)
+Accompanying code for the paper [**"Rainfall&ndash;Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network"**](https://doi.org/10.5194/hess-2020-540)
 
-    Gauch, M., Kratzert, F., Klotz, D., Nearing, G., Lin, J., and Hochreiter, S.:
-    Rainfall--Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network, 2020.
+    Gauch, M., Kratzert, F., Klotz, D., Nearing, G., Lin, J., and Hochreiter, S.: Rainfall--Runoff Prediction at 
+    Multiple Timescales with a Single Long Short-Term Memory Network, Hydrol. Earth Syst. Sci. Discuss., in review, 2020.
 
 The code in this repository, together with the `neuralhydrology` Python package, was used to produce all results and figures in our paper.
 If you want to play around and train models yourself, we recommend taking a look at the [neuralhydrology documentation](https://neuralhydrology.readthedocs.io/), which also contains some tutorials on how to get started.
@@ -44,11 +44,12 @@ Martin Gauch: `gauch (at) ml.jku.at`
 @article{Gauch2020mtslstm,
     author = {Gauch, Martin and Kratzert, Frederik and Klotz, Daniel and Nearing, Grey and Lin, Jimmy and Hochreiter, Sepp},
     title = {Rainfall--Runoff Prediction at Multiple Timescales with a Single Long Short-Term Memory Network},
-    journal = {n/a},
-    volume = {n/a},
-    number = {n/a},
-    pages = {},
-    doi = {n/a}
+    journal = {Hydrology and Earth System Sciences Discussions},
+    volume = {2020},
+    year = {2020},
+    pages = {1--25},
+    url = {https://hess.copernicus.org/preprints/hess-2020-540/},
+    doi = {10.5194/hess-2020-540}
 }
 ```
 
