@@ -13,7 +13,7 @@ If you want to play around and train models yourself, we recommend taking a look
 - `odelstm-analysis.ipynb` -- Jupyter notebook to reproduce our results on time-continuous prediction
 - `environment.yml` -- Conda environment used to train and evaluate the models
 - `configs/` -- configuration files to train the models from scratch
-- `results/` -- Folder to place ensembled model predictions used in `results-analysis.ipynb` (available on [Zenodo](https://doi.org/10.5281/zenodo.4071886), see below)
+- `results/` -- Folder to place ensembled model predictions used in `results-analysis.ipynb` (available on [Zenodo](https://doi.org/10.5281/zenodo.4071885), see below)
 - `data/datadir/` -- Folder to place datasets (see below on where to obtain the data)
 
 ## Required setup
@@ -24,7 +24,7 @@ If you want to play around and train models yourself, we recommend taking a look
    1. the CAMELS US dataset (CAMELS time series meteorology, observed flow, meta data, version 1.2) from [NCAR](https://ral.ucar.edu/solutions/products/camels) into `data/datadir/CAMELS_US`.
    2. for experiments with Maurer forcings, we use an extended forcings set available on [HydroShare](https://www.hydroshare.org/resource/17c896843cf940339c3c3496d0c1c077/). Place this dataset in the folder `data/datadir/CAMELS_US/basin_mean_forcing/maurer_extended`.
    3. the hourly NLDAS forcings and USGS streamflow data from [Zenodo (data)](https://doi.org/10.5281/zenodo.4072700). We recommend using the combined NetCDF file, but you can also use the csv files (but it will take much longer to load the data). Place this NetCDF file in the folder `data/datadir/CAMELS_US/hourly`.
-5. If you don't want to train models yourself but use pre-trained models or simply run the Jupyter notebooks that analyze the results, you find the trained models and their predictions on [Zenodo (models)](https://doi.org/10.5281/zenodo.4071885).
+5. If you don't want to train models yourself but use pre-trained models or simply run the Jupyter notebooks that analyze the results, you find the trained models and their predictions on [Zenodo (models)](https://doi.org/10.5281/zenodo.4071885). **2026 update:** We converted the pickle files to zarr, to avoid problems when reading the data in new environments.
 
 ## Training and evaluating a model
 The folder `configs/` contains one configuration .yml file for each model. To train models from scratch, use these configuration files. If you wish to use pretrained models, download them from Zenodo (see above). Then follow these steps:
